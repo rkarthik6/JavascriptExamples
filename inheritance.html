@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Inheritance</h2>
+
+<p id="demo"></p>
+
+<script>
+class Company {
+  constructor(number) {
+    this.idNo = number;
+  }
+  present() {
+    return 'My ID no is ' + this.idNo;
+  }
+}
+
+class Employee extends Company {
+  constructor(number, age) {
+    super(number);
+    this.age = age;
+  }
+  show() {
+    return this.present() + 'Age is ' + this.age;
+  }
+}
+
+let details = new Employee(123, 23);
+document.getElementById("demo").innerHTML = details.show();
+</script>
+
+</body>
+</html>

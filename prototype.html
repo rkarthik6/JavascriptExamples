@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+function Employee(first, last, age, salary, nationality) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.salary = salary;
+  this.nationality = nationality;
+}
+
+const emp1 = new Employee("John", "King", 50, 1000);
+const emp2 = new Employee("Sathish", "R", 48, 2000);
+Employee.prototype.nationality = "English";
+console.log(emp1)
+console.log(emp2)
+</script>
+
+</body>
+</html>
+
